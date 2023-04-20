@@ -1,0 +1,120 @@
+/* Base styles */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+
+a {
+	color: #0077cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Layout styles */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #ccc;
+}
+
+.header__title {
+	margin: 0;
+	font-size: 28px;
+	font-weight: bold;
+	color: #333;
+}
+
+.header__nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header__nav-item {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.header__nav-link {
+	display: inline-block;
+	padding: 10px;
+	color: #333;
+}
+
+.header__nav-link:hover {
+	background-color: #f9f9f9;
+}
+
+.main__section {
+	margin: 30px 0;
+}
+
+.main__section-title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+.main__section-description {
+	margin: 10px 0;
+	color: #666;
+}
+
+.main__section-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.main__section-item {
+	margin-bottom: 10px;
+}
+
+.main__section-link {
+	color: #0077cc;
+}
+
+.main__section-link:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-top: 1px solid #ccc;
+}
+
+.footer__text {
+	margin: 0;
+	text-align: center;
+	color: #666;
+}
+
+/* State styles */
+
+.header__nav-link.active,
+.header__nav-link:hover {
+	background-color: #0077cc;
+	color: #fff;
+}
+
+.main__section-link.active,
+.main__section-link:hover {
+	text-decoration: underline;
+}
